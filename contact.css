@@ -1,0 +1,55 @@
+/* contact.css */
+
+* {
+    font-family: sans-serif;
+}
+
+nav {
+    border-bottom: 1px solid silver; /* Fixed missing 'solid' and color */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #f2f2f2; /* Added # for color code */
+}
+
+nav a {
+    text-decoration: none;
+    margin: 35px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.main {
+    margin-top: 60px; /* Increased margin-top to make space for fixed nav */
+    padding: 20px;
+}
+
+.cform {
+    text-align: center;
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    color: silver;
+    width: 60%;
+    font-size: 1.5em;
+    padding: 5px 0; /* Added padding to input fields */
+    margin-bottom: 20px; /* Added margin between form elements */
+}
+
+input[type="submit"] {
+    width: 60%;
+    height: 3em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 10px 0 0;
+}

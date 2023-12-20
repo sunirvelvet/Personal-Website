@@ -1,0 +1,79 @@
+
+
+body {
+    background: linear-gradient(to left ,black, rgb(36, 0, 0), black);
+    animation: colorChange 20s infinite alternate;
+    color: silver;
+}
+
+
+
+
+nav {
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    margin: 0 20px;
+    margin-top: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(242, 242, 242, 0.3);
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav a{
+    text-decoration: none;
+    margin: 0 50px;
+    color: silver;
+}
+
+nav a:hover{
+    text-shadow: 20px solid black;
+
+}
+
+.main{
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.section{
+    margin-bottom: 20px;
+}
+
+.section h3{
+   margin-bottom: 5px;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    font-size: 25px;
+}
+
+a {
+    color: silver; /* Default color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: white; /* Color change on hover */
+    text-decoration: underline; /* Underline on hover */
+}

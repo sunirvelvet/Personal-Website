@@ -1,0 +1,53 @@
+*{
+    font-family: sans-serif;
+}
+
+nav{
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 35px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+.main {
+    margin-top: 2px;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+.section{
+    margin-top: 10px;
+}
+
+.section h3 {
+
+    font-size: 2em; /* Change the font size as needed */
+}
+.item {
+    margin-bottom: 100px; /* Adjust the value as needed to increase space between items */
+}
+
+.items {
+    margin-top: 100px;
+}
+
+
+.items h3 a[href="http://paulgraham.com/articles.html"],
+.items h3 a[href="https://www.undistracted.app/"] {
+    font-size: inherit; /* or set a specific font size like 'font-size: 18px;' */
+}

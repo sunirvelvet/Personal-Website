@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunir</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel = "stylesheet" href="main.css"
+
+
+</head>
+<body>
+    <nav>
+        <a href="bio.html">Bio</a>
+        <a href="project.html">Mega Projects</a>
+        <a href="companies.html">Companies</a>
+        <a href="gems.html">Gems</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section class="one">
+            <div class="heading">
+            <h1>SUNIR</h1>
+            <div>
+
+            <div class="tag">
+            <p id="typing-text"></p>
+            <span id="typing-cursor"></span>
+            </div>
+        </section>
+
+        <section class="two">
+            <div class="main">
+                <div class="left">
+                    <p>At 16 left high school and came to United States alone to start a Startup.</p><br><p>Founded CASA, TNPL, and a 11 other startups and Businesses.</p><br><p>I was an intern at Feliciti.co (brought in over 100+ Co-Livings).</p><br><p>Junior National Swimmer for Nepal and have an Natural Inclination and love for Cars.</p><br><p>Building myself and my company in Silicon Valley.</p>
+                </div>
+                <div class="right">
+                    <img src="/Users/sunirmanandhar/Downloads/IMG_0975.PNG">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.getElementById('footer');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var bodyHeight = document.body.offsetHeight;
+
+            if (scrollPosition >= bodyHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });//
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Add a class to trigger the fade-in effect after the page loads
+        var container = document.querySelector('.container');
+        container.classList.add('show');
+    });
+</script>
+
+    <script src="home.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

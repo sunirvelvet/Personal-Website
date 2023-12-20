@@ -1,0 +1,33 @@
+*{
+    font-family: sans-serif;
+}
+
+
+nav{
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 35px;
+}
+
+h1{
+    font-size: 70px;
+}
+.main{
+    margin-top: 2px;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
+}
+
+h3{
+    margin-top: 10px;
+}
