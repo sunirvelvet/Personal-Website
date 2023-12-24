@@ -1,7 +1,7 @@
 
 
 body {
-    background: rgb(173, 173, 173);
+    background: black;
     animation: colorChange 20s infinite alternate;
     color: silver;
 }
