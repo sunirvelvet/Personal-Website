@@ -1,7 +1,7 @@
 
 
 body {
-    background: linear-gradient(to left ,black, rgb(36, 0, 0), black);
+    background: darkgray
     animation: colorChange 20s infinite alternate;
     color: silver;
 }
