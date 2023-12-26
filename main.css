@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 
 
 body {
@@ -20,42 +23,41 @@ nav {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(242, 242, 242, 0.3);
+    background-color: rgba(242, 242, 242, 0.5);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 3s;
 }
 
 
 nav a{
-    text-decoration: none;
     margin: 0 50px;
-    color: silver;
+    color: white;
 }
 
-nav a:hover{
-    text-shadow: 20px solid black;
 
-}
 
 .main{
-    animation: fadeIn 3s;
+    margin-top: 2px;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 
 
 .section{
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .section h3{
    margin-bottom: 5px;
+   font-size: 2em;
 }
 
 h3{
@@ -66,10 +68,11 @@ p{
     font-size: 25px;
 }
 
+
 a {
     color: silver; /* Default color */
     text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth transition */
+    transition: color 1s; /* Smooth transition */
 }
 
 /* Hover effect for links */
@@ -77,3 +80,111 @@ a:hover {
     color: white; /* Color change on hover */
     text-decoration: underline; /* Underline on hover */
 }
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 180px;
+    text-align: center;
+    line-height: 50px;
+}
+
+footer p {
+    text-align: center;
+
+}
+
+.social {
+    margin-top: 80px;
+    font-size: 30px;
+
+}
+
+.social a {
+    margin: 0 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    margin-top: 100px;
+}
+.item {
+    margin-bottom: 100px; /* Adjust the value as needed to increase space between items */
+}
+
+.items {
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.des{
+    font-size: 25px;
+    margin-bottom: 100px
+}
+
+/* Media query for iPhone 12 Pro in portrait mode */
+@media only screen and (max-width: 600px)
+ {
+    body {
+        font-size: 14px; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    nav {
+        width: 90%; /* Increase the width to occupy more space on smaller screens */
+        height: 50px; /* Adjust height for better visibility */
+        margin: 0; /* Reset margins */
+        margin-top: 10px;
+
+    }
+
+    nav a {
+        margin: 0 10px; /* Reduce link margins */
+    }
+
+    .main {
+        padding: 10px; /* Decrease padding for content */
+    }
+
+    .section h3 {
+        font-size: 1.5em; /* Reduce heading size */
+    }
+
+    h1 {
+        font-size: 40px; /* Decrease heading size */
+        margin-top: 70px; /* Adjust top margin */
+    }
+
+    footer {
+        margin-top: 100px; /* Adjust top margin */
+
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .social {
+        margin-top: 40px; /* Adjust margin */
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .item {
+        margin-bottom: 50px; /* Adjust margin between items */
+    }
+
+    .items {
+        margin-top: 50px; /* Adjust top margin */
+        font-size: 13px; /* Reduce font size */
+    }
+
+    .des {
+        font-size: 13px; /* Adjust font size */
+        margin-bottom: 50px; /* Adjust margin */
+    }
+
+
+
+ }
