@@ -1,13 +1,4 @@
 
-*{
-    font-family: sans-serif;
-}
-
-body{
-    background-color: black;
-    color: silver;
-}
-
 
 .section{
     margin-bottom: 20px;
@@ -24,20 +15,34 @@ body{
     gap: 10px;
 }
 
-.content img{
-    max-width: 100px;
-    height: auto;
-}
 
-.heading{
-    font-size: 70px;
-    margin-top: 100px;
-}
 
-h3{
-    font-size: 50px;
-}
 
-p{
-    font-size: 25px;
-}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  @media only screen and (max-width: 600px)
+  {
+   .section p{
+     font-size: 13px;
+   }
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  }
