@@ -1,32 +1,3 @@
-/* contact.css */
-
-* {
-    font-family: sans-serif;
-}
-
-nav {
-    border-bottom: 1px solid silver; /* Fixed missing 'solid' and color */
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #f2f2f2; /* Added # for color code */
-}
-
-nav a {
-    text-decoration: none;
-    margin: 35px;
-}
-
-h1 {
-    font-size: 70px;
-}
-
-.main {
-    margin-top: 60px; /* Increased margin-top to make space for fixed nav */
-    padding: 20px;
-}
-
 .cform {
     text-align: center;
 }
@@ -53,3 +24,13 @@ input[type="radio"],
 input[type="checkbox"] {
     margin: 0 10px 0 0;
 }
+@media only screen and (max-width: 600px)
+ {
+
+  input,
+  textarea {
+    font-size: 17px;
+  }
+
+
+ }
