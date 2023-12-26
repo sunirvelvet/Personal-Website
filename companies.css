@@ -1,33 +1,25 @@
-*{
-    font-family: sans-serif;
-}
+body::-webkit-scrollbar {
+    display: none;
+  }
 
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
-nav{
-    border: 1px solid black;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    text-align: center;
-    background-color: #f2f2f2;
-}
+  @media only screen and (max-width: 600px)
+ {
+  .short{
+    font-size: 13px;
+  }
 
-nav a{
-    text-decoration: none;
-    margin: 35px;
-}
+  .items p{
+    font-size: 13px;
+  }
 
-h1{
-    font-size: 70px;
-}
-.main{
-    margin-top: 2px;
-    overflow-y: auto;
-    height: 100vh;
-    padding: 20px;
-}
+  .items h3{
+    font-size: 20px;
+  }
 
-h3{
-    margin-top: 10px;
-}
+ }
