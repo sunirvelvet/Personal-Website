@@ -1,7 +1,12 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     text-align: center;
+    overflow: hidden;
 
 }
 
@@ -14,6 +19,8 @@ body {
 
     text-shadow: 10px;
     animation: fadeIn 3s;
+
+
 }
 
 .tag p {
@@ -23,15 +30,20 @@ body {
 }
 
 
-.main {
+
+
+.core {
     display: flex;
     width: 100%;
-
+    flex-wrap: wrap;
 }
 
 .left,
 .right {
     flex: 1;
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
+    /* Add padding as needed */
+   overflow: auto;
 }
 
 .left p{
@@ -39,6 +51,8 @@ body {
     font-size: 45px;
     text-align: left;
     padding: 35px;
+    padding-left: 0;
+    height: auto;
 }
 
 .right {
@@ -54,118 +68,11 @@ body {
     height: auto;
 }
 
-* {
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 
 section {
     height: 70vh;
 
 }
-
-footer {
-    background-color: #111;
-}
-
-.footer {
-    width: 100%;
-    padding: 70px, 30px, 20px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 50%;body {
-        text-align: center;
-
-    }
-
-    .heading h1 {
-        font-size: 200px ;
-        margin-bottom: 10px;
-        margin-top: 300px;
-        color: white;
-        background:0;
-
-        text-shadow: 10px;
-        animation: fadeIn 3s;
-    }
-
-    .tag p {
-        font-size: 70px;
-        text-align: center;
-        color: silver;
-    }
-
-
-    .main {
-        display: flex;
-        width: 100%;
-
-    }
-
-    .left,
-    .right {
-        flex: 1;
-    }
-
-    .left p{
-
-        font-size: 45px;
-        text-align: left;
-        padding: 35px;
-    }
-
-    .right {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .right img {
-        width: 100%;
-        height: auto;
-    }
-
-    * {
-        font-family: sans-serif;
-    }
-
-
-    section {
-        height: 70vh;
-
-    }
-
-
-    .footer {
-
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #f0f0f0;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .footer .social-icons a {
-        margin: 0 10px;
-        color: #333;
-        font-size: 24px;
-    }
-
 
     .container{
 
@@ -175,9 +82,9 @@ footer {
         padding: 20px;
     }
 
-    .one {
-        margin-top: 0;
-    }
+
+
+
 
 
     .tag {
@@ -186,11 +93,6 @@ footer {
         font-size: 70px;
     }
 
-    #typing-cursor {
-        display: inline-block;
-        margin-left: 5px;
-        animation: cursor-blink 0.8s infinite;
-    }
 
     @keyframes cursor-blink {
         0% {
@@ -216,115 +118,56 @@ footer {
         animation: caret-blink 0.8s infinite;
         top: 50%;
         transform: translateY(-50%);
-    }
-
-    @keyframes caret-blink {
-
-        0% {
-            opacity: 1;
-        }
-
-        50% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
+        margin-left: 5px;
+        animation: cursor-blink 0.8s infinite;
     }
 
 
 
 
-    @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+/* This is for the footer, section makes it have like different pages effect and also screws up the footer , so just make it part of section as well. This is section with class three.*/
+.three {
+
+    margin-top: 900px;
+    height: 10vh
+}
+
+.two{
+
+
+}
+@media only screen and (max-width: 600px)
+  {
+
+    .heading h1 {
+        font-size: 80px ;
+        margin-top: 350;
+        margin-bottom: 0;
     }
 
-}
+    .tag p {
+        font-size: 21px;
 
-.socialIcons a i{
-    font-size: 2em;
-    color: black;
-    opacity: 0.9;
-}
-
-.socialIcons a:hover i {
-    color: white;
-    transition: 0.5s;
-}
-
-
-.container{
-
-    margin-top: 2px;
-    overflow-y: auto;
-    height: 100vh;
-    padding: 20px;
-}
-
-.one {
-    margin-top: 0;
-}
-
-
-.tag {
-    position: relative;
-    display: inline-block;
-    font-size: 70px;
-}
-
-#typing-cursor {
-    display: inline-block;
-    margin-left: 5px;
-    animation: cursor-blink 0.8s infinite;
-}
-
-@keyframes cursor-blink {
-    0% {
-        opacity: 1;
     }
 
-    50% {
-        opacity: 0;
+    .left p{
+
+        font-size: 20px;
+        padding: 5px;
     }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-#typing-cursor {
-
-    display: inline-block;
-    width: 3px;
-    height: 70px;
-    background-color: silver;
-    position:absolute;
-    animation: caret-blink 0.8s infinite;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@keyframes caret-blink {
-
-    0% {
-        opacity: 1;
+    .right img {
+        margin-top: 0; /* Reset margin-top */
+        margin-bottom: 380px; /* Add margin-bottom to separate the image */
     }
 
-    50% {
-        opacity: 0;
+    .three{
+        margin-top: 200px;
     }
 
-    100% {
-        opacity: 1;
+    .two{
+        margin-top: 0;
     }
-}
 
 
-
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+  }
